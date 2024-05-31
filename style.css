@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    background-color: #f8f9fa;
+    background-color: #007272;
 }
 
 
@@ -19,8 +19,10 @@ body {
 /* ----GENERAL----- */
 .flex-box{
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
+    align-content: center;
+
 }
 
 
@@ -33,9 +35,12 @@ body {
 /* ? Classi ------------ */
 
 .IlTuoProfilo{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(214, 214, 214);
+    color: black;
     width: 55vh;
-    height: 10vh;
+    height: 7.2vh;
+
+    border-right: rgb(53, 53, 53) 1px solid;
 }
 
 
@@ -49,18 +54,18 @@ body {
 
 
 .listaContatti{
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     width: 55vh;
-    height: 75vh;
+    height: 77.8vh;
 }
 
 
 
 
 .SelectedContactInfo{
-    background-color: rgb(94, 255, 0);
+    background-color: rgb(214, 214, 214);
     width: 110vh;
-    height: 10vh;
+    height: 7.2vh;
 }
 
 
@@ -68,5 +73,114 @@ body {
 .ChatBox{
     background-color: rgb(204, 0, 255);
     width: 110vh;
-    height: 90vh;
+    height: 92.8vh;
+
+
+    background-image: url('./img/Icon/background.png');
+    background-size: fill;
+    background-position: center;
+    background-repeat: repeat;
+
+
+    /* per posizionare l'input per la chat */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.InputText{
+    border: none;
+    border-radius: 0.8rem;
+    height: 2rem;
+    width: 96%;
+}
+
+.BottoneInvio{
+    border: none;
+    background-color: #289f28;
+    border-radius: 3rem;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.HorizontalInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.FlexNameBox{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ProfilePhoto{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 8rem;
+    padding: .5rem;
+}
+
+.icon{
+    width: 10%;
+}
+
+
+.innerspace{
+    padding: 2rem;
+}
+
+
+.SpaceEvely{
+    justify-content: space-evenly;
+}
+
+.bell{
+    background-color: white;
+    border-radius: 20rem;
+    padding: .8rem;
+    width: 3.5rem;
+    height: 3.8rem;
+}
+
+
+.contatto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    border-bottom: rgb(48, 48, 48) 1px solid;
+
+}
+
+.profiloContatto{
+    display: flex;
+    align-items: center;
+}
+
+
+.ProfilePhoto2{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 8rem;
+    padding: .9rem;
+}
+
+
+.ContactOption{
+    display: flex;
+    justify-content: flex-end;
+    width: 16rem;
+    margin: 1rem;
 }

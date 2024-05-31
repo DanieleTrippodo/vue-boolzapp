@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 
 
@@ -36,20 +37,107 @@
     <header>
 
         <!-- il Tuo Profilo -->
-        <section class="IlTuoProfilo">
-            <!-- sezione dove è presente il tuo profilo -->
+        <section class="HorizontalInfo IlTuoProfilo">
+            <!-- Profile Picture and Name -->
+            <div class="FlexNameBox">
+                <img src="./img/shinji image.jpg" alt="ProfilePicture" class="ProfilePhoto">
+                <h3>Shinji</h3>
+            </div>
+
+            <!-- INFO impostazioni -->
+            <div class="FlexNameBox">
+                <img src="./img/Icon/98948-200.png" alt="Circle" class="icon">
+                <img src="./img/Icon/pngtree-pixel-art-message-icon-design-vector-png-image_6122180.png" alt="Message" class="icon">
+                <img src="./img/Icon/644033-200.png" alt="Menu" class="icon">
+            </div>
         </section>
 
 
+
+
+
         <!-- Barra blu che ti chiede di attivare le notifiche -->
-        <section class="NotificheApp">
-            <!-- contenuto -->
+        <section class="NotificheApp HorizontalInfo innerspace SpaceEvely">
+
+            <img src="./img/Icon/nd-bell-sign.png" alt="Alert" class="bell">
+
+            <div>
+                <h3> Ricevi notifiche di nuovi messaggi </h3>
+                <p> Attiva notifiche desktop </p>
+            </div>
         </section>
 
 
         <!-- Barra contatti -->
         <section class="listaContatti">
             <!-- todo contenuto -->
+
+            <!-- ! Contatto 1 -->
+            <div class="contatto">
+
+                <!-- Avatar + Nome contatto + Ultimo messaggio -->
+                <section class="profiloContatto">
+                    <img src="./img/reiayanami-3730754606.png" alt="ProfilePicture" class="ProfilePhoto">
+
+                    <div>
+                        <h3>Rei</h3>
+                        <p style="color: grey;"> Nessun Messaggio Recente. </p>
+                    </div>
+                </section>
+                <!-- Orario invio ultimo messaggio -->
+                <p>12:30</p>
+            
+            </div>
+
+
+            <!-- ! Contatto 2 -->
+            <div class="contatto">
+                <!-- Avatar + Nome contatto + Ultimo messaggio -->
+                <section class="profiloContatto">
+                <img src="./img/Gendo_Ikari.jpg" alt="Avatar" class="ProfilePhoto">
+
+                <div>
+                    <h3>Gendō Ikari</h3>
+                    <p> Sali sull'eva. </p>
+                </div>
+                </section>
+                <!-- Orario invio ultimo messaggio -->
+                <p>04:00</p>
+            </div>
+
+
+            <!-- ! Contatto 3 -->
+            <div class="contatto">
+                <!-- Avatar + Nome contatto + Ultimo messaggio -->
+                <section class="profiloContatto">
+                <img src="./img/misato.jpg" alt="Avatar" class="ProfilePhoto">
+
+                <div>
+                    <h3>Misato</h3>
+                    <p> Shinji! sali sull'eva </p>
+                </div>
+                </section>
+                <!-- Orario invio ultimo messaggio -->
+                <p>11:23</p>
+            </div>
+
+
+            <!-- ! Contatto 4 -->
+            <div class="contatto">
+                <!-- Avatar + Nome contatto + Ultimo messaggio -->
+                <section class="profiloContatto">
+                <img src="./img/asuka.jpg" alt="Avatar" class="ProfilePhoto">
+
+                <div>
+                    <h3>Asuka</h3>
+                    <p> ... </p>
+                </div>
+                </section>
+                <!-- Orario invio ultimo messaggio -->
+                <p>20:10</p>
+            </div>
+
+
         </section>
         
     </header>                                                                
@@ -83,20 +171,49 @@
         
         <!-- Profilo Contatto Selezionato -->
         <section class="SelectedContactInfo">
-            <!-- contenuto -->
+            
+            <!-- contatto con cui hai aperto la chat -->
+            <div class="contatto">
+
+                <!-- Avatar + Nome contatto + Ultimo messaggio -->
+                <section class="profiloContatto">
+                    <img src="./img/reiayanami-3730754606.png" alt="ProfilePicture" class="ProfilePhoto2">
+
+                    <div>
+                        <h3>Rei</h3>
+                        <p style="color: grey;"> Ultimo accesso oggi alle 12:00 </p>
+                    </div>
+                </section>
+
+                <!-- Orario invio ultimo messaggio -->
+                <div class="ContactOption">
+                    <img src="./img/Icon/searh icon.png" alt="SearchIcon" class="icon">
+                    <img src="./img/Icon/clip.png" alt="ClipIcon" class="icon">
+                    <img src="./img/Icon/644033-200.png" alt="Menu" class="icon">
+                </div>
+            
+            </div>
+
         </section>
 
 
         <!-- ChatBox -->
         <section class="ChatBox">
             <!-- contenuto -->
-        </section>
 
+
+
+            <section>
+                <input type="text" placeholder="    Scrivi Qui..." class="InputText">
+                <button class="BottoneInvio"> > </button>
+            </section>
+        </section>
+        
         
     </main>                                                                
     <!-- -main-------------------FINE--------------------------- -->
 
-    
+
 </div>  <!-- Chiusura instanza di Vue3 -->
 
 
