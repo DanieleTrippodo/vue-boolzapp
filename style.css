@@ -103,6 +103,7 @@ body {
     width: 2rem;
     height: 2rem;
     color: white;
+    margin-left: .3rem;
 }
 
 .HorizontalInfo{
@@ -183,4 +184,26 @@ body {
     justify-content: flex-end;
     width: 16rem;
     margin: 1rem;
+}
+
+
+
+
+/* component VUE3 */
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 60%;
+}
+
+
+.sent {
+    background-color: #dcf8c6; 
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #ffffff; 
+    align-self: flex-start;
 }

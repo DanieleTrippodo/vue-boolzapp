@@ -70,71 +70,22 @@
 
         <!-- Barra contatti -->
         <section class="listaContatti">
-            <!-- todo contenuto -->
 
-            <!-- ! Contatto 1 -->
-            <div class="contatto">
+            <!-- ! Contatto -->
+            <div v-for="contact in contacts" :key="contact.id" class="contatto">
 
                 <!-- Avatar + Nome contatto + Ultimo messaggio -->
                 <section class="profiloContatto">
-                    <img src="./img/reiayanami-3730754606.png" alt="ProfilePicture" class="ProfilePhoto">
+                    <img :src="contact.img" alt="ProfilePicture" class="ProfilePhoto">
 
                     <div>
-                        <h3>Rei</h3>
-                        <p style="color: grey;"> Nessun Messaggio Recente. </p>
+                        <h3>{{contact.name}}</h3>
+                        <p style="color: grey;"> {{ contact.lastMessage }} </p>
                     </div>
                 </section>
                 <!-- Orario invio ultimo messaggio -->
-                <p>12:30</p>
+                <p>{{ contact.lastMessageTime }}</p>
             
-            </div>
-
-
-            <!-- ! Contatto 2 -->
-            <div class="contatto">
-                <!-- Avatar + Nome contatto + Ultimo messaggio -->
-                <section class="profiloContatto">
-                <img src="./img/Gendo_Ikari.jpg" alt="Avatar" class="ProfilePhoto">
-
-                <div>
-                    <h3>Gendō Ikari</h3>
-                    <p> Sali sull'eva. </p>
-                </div>
-                </section>
-                <!-- Orario invio ultimo messaggio -->
-                <p>04:00</p>
-            </div>
-
-
-            <!-- ! Contatto 3 -->
-            <div class="contatto">
-                <!-- Avatar + Nome contatto + Ultimo messaggio -->
-                <section class="profiloContatto">
-                <img src="./img/misato.jpg" alt="Avatar" class="ProfilePhoto">
-
-                <div>
-                    <h3>Misato</h3>
-                    <p> Shinji! sali sull'eva </p>
-                </div>
-                </section>
-                <!-- Orario invio ultimo messaggio -->
-                <p>11:23</p>
-            </div>
-
-
-            <!-- ! Contatto 4 -->
-            <div class="contatto">
-                <!-- Avatar + Nome contatto + Ultimo messaggio -->
-                <section class="profiloContatto">
-                <img src="./img/asuka.jpg" alt="Avatar" class="ProfilePhoto">
-
-                <div>
-                    <h3>Asuka</h3>
-                    <p> ... </p>
-                </div>
-                </section>
-                <!-- Orario invio ultimo messaggio -->
-                <p>20:10</p>
             </div>
 
 
@@ -199,13 +150,14 @@
 
         <!-- ChatBox -->
         <section class="ChatBox">
-            <!-- contenuto -->
+            <div v-for="message in messages" :key="message.id" :class="['message', message.type]">
+                {{ message.text }}
+            </div>
 
-
-
+            <!-- Barra di testo dei messaggi da inviare -->
             <section>
                 <input type="text" placeholder="    Scrivi Qui..." class="InputText">
-                <button class="BottoneInvio"> > </button>
+                <button class="BottoneInvio">></button>
             </section>
         </section>
         
