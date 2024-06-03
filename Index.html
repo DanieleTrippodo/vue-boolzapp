@@ -111,7 +111,7 @@
     |   ;/         |  ,     .-./|  ,   / '---'        
     '---'           `--`---'     ---`-'               -->
     <!-- -main-------------------------------------------------- -->
-    <main>
+    <main v-if="activeContact">
         
         <!-- Profilo Contatto Selezionato -->
         <section class="SelectedContactInfo">
@@ -121,10 +121,10 @@
 
                 <!-- Avatar + Nome contatto + Ultimo messaggio -->
                 <section class="profiloContatto">
-                    <img src="./img/reiayanami-3730754606.png" alt="ProfilePicture" class="ProfilePhoto2">
+                    <img :src="activeContact.img" alt="ProfilePicture" class="ProfilePhoto2">
 
                     <div>
-                        <h3>Rei</h3>
+                        <h3>{{ activeContact.name }}</h3>
                         <p style="color: grey;"> Ultimo accesso oggi alle 12:00 </p>
                     </div>
                 </section>
