@@ -72,23 +72,16 @@
         <section class="listaContatti">
 
             <!-- ! Contatto -->
-            <div v-for="contact in contacts" :key="contact.id" class="contatto">
-
-                <!-- Avatar + Nome contatto + Ultimo messaggio -->
+            <div v-for="contact in contacts" :key="contact.id" class="contatto" @click="setActiveContact(contact)">
                 <section class="profiloContatto">
                     <img :src="contact.img" alt="ProfilePicture" class="ProfilePhoto">
-
                     <div>
-                        <h3>{{contact.name}}</h3>
-                        <p style="color: grey;"> {{ contact.lastMessage }} </p>
+                        <h3>{{ contact.name }}</h3>
+                        <p style="color: grey;">{{ contact.lastMessage }}</p>
                     </div>
                 </section>
-                <!-- Orario invio ultimo messaggio -->
                 <p>{{ contact.lastMessageTime }}</p>
-            
             </div>
-
-
         </section>
         
     </header>                                                                
