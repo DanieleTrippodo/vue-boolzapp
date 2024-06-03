@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootzapp</title>
 
+    <!-- Icona scheda web -->
+    <link rel="icon" href="./img/Icon/nerv-logo-3F7E5E1B2B-seeklogo.com.png" type="Nerv-Logo">
+
     <!-- collegamento CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -45,10 +48,10 @@
             </div>
 
             <!-- INFO impostazioni -->
-            <div class="FlexNameBox">
-                <img src="./img/Icon/98948-200.png" alt="Circle" class="icon">
-                <img src="./img/Icon/pngtree-pixel-art-message-icon-design-vector-png-image_6122180.png" alt="Message" class="icon">
-                <img src="./img/Icon/644033-200.png" alt="Menu" class="icon">
+            <div class="FlexNameBox FixedScale">
+                <img src="./img/Icon/CircleNew.png" alt="Circle" class="icon">
+                <img src="./img/Icon/messageNew.png" alt="Message" class="icon">
+                <img src="./img/Icon/dotmenuNew.png" alt="Menu" class="icon">
             </div>
         </section>
 
@@ -123,10 +126,12 @@
                 <section class="profiloContatto">
                     <img :src="activeContact.img" alt="ProfilePicture" class="ProfilePhoto2">
 
+                    <!-- Nome contatto e Ultimo messaggio inviato -->
                     <div>
                         <h3>{{ activeContact.name }}</h3>
                         <p style="color: grey;"> Ultimo accesso oggi alle 12:00 </p>
                     </div>
+
                 </section>
 
                 <!-- Orario invio ultimo messaggio -->
