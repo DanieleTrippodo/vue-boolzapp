@@ -206,11 +206,13 @@ body {
 .sent {
     background-color: #dcf8c6; 
     align-self: flex-end;
+    height: 3rem;
 }
 
 .received {
     background-color: #ffffff; 
     align-self: flex-start;
+    height: 3rem;
 }
 
 
