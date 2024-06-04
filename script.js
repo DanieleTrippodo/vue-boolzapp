@@ -70,6 +70,13 @@ createApp({
         sendMessage() {
             if (this.newMessage.trim() !== '') {
                 this.activeContact.messages.push({ id: Date.now(), text: this.newMessage, type: 'sent' });
+
+
+                // Risposta dopo 1 secondo dell'altro utente
+                setTimeout(() => {
+                    this.activeContact.messages.push({ id: Date.now(), text: 'Ok', type: 'received' });
+                }, 1000);
+
                 this.newMessage = '';
             }
         }
