@@ -161,7 +161,7 @@
 
             <!-- Barra di testo dei messaggi da inviare -->
             <section>
-                <input type="text" placeholder="    Scrivi Qui..." class="InputText">
+                <input type="text" placeholder="    Scrivi Qui..." class="InputText"v-model="newMessage" @keyup.enter="sendMessage">
                 <button class="BottoneInvio" @click="sendMessage">></button>
             </section>
         </section>
