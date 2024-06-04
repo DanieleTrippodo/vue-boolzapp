@@ -4,6 +4,10 @@ createApp({
     data() {
         return {
             activeContact: null, // Stato per il contatto attivo
+            newMessage: '', // per inviare un nuovo messagio da parte dell'utente
+
+
+            // Tutti i contatti e i loro dati
             contacts: [
                 { 
                     id: 1, 
@@ -50,9 +54,26 @@ createApp({
             ]
         };
     },
+
+
+
+
+
+//# Sezione Funzioni ---------------------------------------------------------------
     methods: {
+
         setActiveContact(contact) {
             this.activeContact = contact;
+        },
+
+
+        sendMessage() {
+            if (this.newMessage.trim() !== '') {
+                this.activeContact.messages.push({ id: Date.now(), text: this.newMessage, type: 'sent' });
+                this.newMessage = '';
+            }
         }
     }
+
+
 }).mount('#app');
