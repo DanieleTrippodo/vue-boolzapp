@@ -72,7 +72,11 @@
 
 
 
-
+        <!-- Barra 'Search' per filtrare i contatti -->
+        <section id="SearchBar">
+            <img src="img/Icon/SearchLensNEW.png" alt="SearchIcon" class="iconSmall">
+            <input type="text" placeholder="Scrivi il nome della persona che stai cercando..." class="SearchText Fill">
+        </section>
 
 
 
@@ -161,7 +165,7 @@
 
             <!-- Barra di testo dei messaggi da inviare -->
             <section>
-                <input type="text" placeholder="    Scrivi Qui..." class="InputText"v-model="newMessage" @keyup.enter="sendMessage">
+                <input type="text" placeholder="Scrivi Qui..." class="InputText"v-model="newMessage" @keyup.enter="sendMessage">
                 <button class="BottoneInvio" @click="sendMessage">></button>
             </section>
         </section>

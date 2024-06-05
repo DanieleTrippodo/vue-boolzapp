@@ -77,6 +77,8 @@ createApp({
                     this.activeContact.messages.push({ id: Date.now(), text: 'Ok', type: 'received' });
                 }, 1000);
 
+                
+
                 this.newMessage = '';
             }
         }
